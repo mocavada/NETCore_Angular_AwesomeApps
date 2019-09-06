@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
 })
 export class MovieApiService {
 
-serverUrl = 'http://localhost:5000';
+serverUrl = 'https://marconox.com/api/movies';
 moviesApiUrl = this.serverUrl +  '/api/movies';
 movieResult$ = new BehaviorSubject<[Movie]>(null);
 
