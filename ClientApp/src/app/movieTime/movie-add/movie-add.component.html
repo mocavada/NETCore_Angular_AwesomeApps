@@ -1,12 +1,13 @@
-<div class="container">
 
-<div class="row pt-5">
-  <div class="col">
+
+<div class="row pl-5 pr-5 pt-5">
+  <div class="col pl-4 pr-4">
       <div class="row">
           <div *ngIf="validMessage != ''">
             <h3 class="has-info">{{validMessage}}</h3>
           </div>
       </div>
+      <h2 class="text-info">Add Your Movie</h2>
       <form class="form-group"
       [formGroup]="movieForm" (ngSubmit)="onSubmit(movieForm)">
       <div class="example-container">
@@ -40,16 +41,16 @@
               <mat-datepicker #picker></mat-datepicker>
           </mat-form-field>
 
-          <button mat-flat-button value="Post" type="submit" class="submitmovie" style="align-self: center; width:100%" color="accent"><h5>Add</h5></button>
+          <button mat-flat-button value="Post" type="submit" class="submitmovie" style="width:60%" color="accent"><h5>Add</h5></button>
         </div>
         </form>
   </div>
 
 
+
   <div class="col">
     <app-movie-list></app-movie-list>
   </div>
-</div>
 </div>
 
 <!-- <mat-form-field>
