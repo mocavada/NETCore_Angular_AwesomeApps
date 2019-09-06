@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
 })
 export class MovieApiService {
 
-serverUrl = 'https://marconox.com/api/movies';
+serverUrl = 'https://marconox.com';
 moviesApiUrl = this.serverUrl +  '/api/movies';
 movieResult$ = new BehaviorSubject<[Movie]>(null);
 
