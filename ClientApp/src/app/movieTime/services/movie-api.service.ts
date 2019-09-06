@@ -48,4 +48,15 @@ editMovie(movie: Movie) {
   return this.http.put<any>(this.moviesApiUrl + '/' + movie.id, movie);
 }
 
+addMovie(movie: Movie) {
+  this.http
+    .post<any>( this.moviesApiUrl, movie)
+    .subscribe(data => {
+      console.log(data);
+      this.movieResult$.next(data);
+    }, err => {
+      console.log('Something went wrong Adding!');
+    });
+}
+
 }

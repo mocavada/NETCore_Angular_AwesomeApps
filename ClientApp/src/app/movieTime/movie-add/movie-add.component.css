@@ -1,8 +1,21 @@
 .example-container {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 }
 
 .example-container > * {
-  width: 50%;
+  width: 80%;
+}
+
+.submitmovie {
+  height: 50px;
+  padding-top: 10px;
+  margin-top: 15px;
+
+}
+
+.submitmovie a {
+  line-height: 50px;
+
 }
