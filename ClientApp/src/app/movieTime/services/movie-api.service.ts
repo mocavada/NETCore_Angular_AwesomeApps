@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
 })
 export class MovieApiService {
 
-serverUrl = environment.serverAddress;
+serverUrl = 'http://localhost:5000';
 moviesApiUrl = this.serverUrl +  '/api/movies';
 movieResult$ = new BehaviorSubject<[Movie]>(null);
 
